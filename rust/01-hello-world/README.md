@@ -1,4 +1,4 @@
-PHP Hello World
+Rust Hello World
 ==================
 
 ```sh
