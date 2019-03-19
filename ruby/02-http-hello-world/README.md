@@ -5,6 +5,7 @@ Install the Gems:
 
 ```sh
 $ mkdir .ruby
+$ export GEM_HOME=.ruby
 $ gem install sinatra --no-rdoc --no-ri
 ```
 
