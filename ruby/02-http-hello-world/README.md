@@ -1,0 +1,13 @@
+Ruby 2.5 && Sinatra Hello World
+==================
+
+Install the Gems:
+
+```sh
+$ mkdir .ruby
+$ gem install sinatra --no-rdoc --no-ri
+```
+
+```sh
+$ ops load ruby_2.5.1 -p 4567 -c config.json
+```
