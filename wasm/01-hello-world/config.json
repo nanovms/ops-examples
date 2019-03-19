@@ -1,0 +1,4 @@
+{
+  "Args": ["run", "hi.wasm"],
+  "Files": ["hi.wasm"]
+}
