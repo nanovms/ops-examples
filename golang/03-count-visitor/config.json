@@ -1,0 +1,10 @@
+{
+    "Files": ["visitor_count"], 
+    "Args": ["visitor_count"],
+
+    "RunConfig": {
+        "Verbose": true,
+        "Ports": [3000],
+        "Memory": "0.5G"
+    }
+}
