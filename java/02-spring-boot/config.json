@@ -1,0 +1,4 @@
+{
+  "Args": ["-Dos.name=Linux", "-jar", "/target/myproject-0.0.1-SNAPSHOT.jar"],
+  "Dirs": ["target", "tmp"]
+}
