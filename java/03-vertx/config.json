@@ -1,0 +1,5 @@
+{
+  "Args": ["-Dos.name=Linux", "-jar", "/target/maven-simplest-3.7.1-fat.jar"],
+  "Files": ["target/maven-simplest-3.7.1-fat.jar"],
+  "Dirs": ["tmp"]
+}
