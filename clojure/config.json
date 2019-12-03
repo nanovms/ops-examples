@@ -1,0 +1,4 @@
+{
+  "Files": ["main.clj"],
+  "Args": ["main.clj"]
+}
