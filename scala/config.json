@@ -1,0 +1,4 @@
+{
+    "Args": ["Hello"],
+    "Files": ["Hello.scala", "Hello$.class", "Hello.class"]
+}
