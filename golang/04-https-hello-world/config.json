@@ -1,0 +1,10 @@
+{
+  "Files": ["server.crt", "server.key"],
+  "Dirs": ["static"],
+  "CloudConfig" :{
+    "ProjectID" :"my-project",
+    "Zone": "us-west2-a",
+    "BucketName":"my-bucket"
+  },
+  "RebootOnExit": true
+}
