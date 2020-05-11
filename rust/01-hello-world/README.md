@@ -42,7 +42,7 @@ RUSTFLAGS="-C linker=x86_64-linux-musl-gcc" \
 cargo build --target=x86_64-unknown-linux-musl
 ```
 
-### Dyanmic
+### Dynamic
 
 The process here is a bit different as you'll need to copy over any
 libraries you are linked to and put them in the correct spot.
