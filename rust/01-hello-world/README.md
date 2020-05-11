@@ -42,7 +42,7 @@ RUSTFLAGS="-C linker=x86_64-linux-musl-gcc" \
 cargo build --target=x86_64-unknown-linux-musl
 ```
 
-### Dyanmic
+### Dynamic
 
 The process here is a bit different as you'll need to copy over any
 libraries you are linked to and put them in the correct spot.
@@ -68,6 +68,8 @@ Sample Config:
 }
 ```
 
+Next you need to point at or copy the libraries over:
+
 ```
 ➜  tr  tree
 .
@@ -81,6 +83,17 @@ Sample Config:
 │   └── librt.so.1
 ├── main
 └── main.rs
+```
+
+From the toolchain I installed it was installed here:
+
+```
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2 .
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libc.so.6 .
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libdl.so.2 .
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libgcc_s.so.1 .
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libpthread.so.0 .
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/librt.so.1 .
 ```
 
 If you need to figure out what libraries are there you can use:
