@@ -1,0 +1,8 @@
+{
+  "Files": ["/lib/x86_64-linux-gnu/librt.so.1", "/usr/lib/x86_64-linux-gnu/libicuuc.so.66.1", "/usr/lib/x86_64-linux-gnu/libicui18n.so.66.1", "/usr/lib/x86_64-linux-gnu/libicudata.so.66"],
+  "MapDirs": {"publish/*": "/" },
+  "Dirs": ["publish"],
+  "Env": {
+    "COMPlus_EnableDiagnostics": "0"
+  }
+}
