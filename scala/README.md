@@ -6,5 +6,5 @@ To package and deploy run the following command.
 
 ```
 $ scala Hello.scala
-$ ops load scala_2.13.0 -c config.json
+$ ops pkg load scala_2.13.0 -c config.json
 ```

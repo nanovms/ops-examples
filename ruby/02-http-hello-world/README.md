@@ -10,5 +10,5 @@ $ gem install sinatra --no-rdoc --no-ri
 ```
 
 ```sh
-$ ops load ruby_2.5.1 -p 4567 -c config.json
+$ ops pkg load ruby_2.5.1 -p 4567 -c config.json
 ```

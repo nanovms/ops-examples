@@ -10,7 +10,7 @@ In this example we tell OPS to load the entire usr directory specified
 (which has a new nginx.conf) that listens on port 8084.
 
 ```
-ops load nginx_1.15.6 -c config.json -p 8084
+ops pkg load nginx_1.15.6 -c config.json -p 8084
 ```
 
 Now if we load it we see that we can listen on a different port.
