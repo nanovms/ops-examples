@@ -36,13 +36,13 @@ Information for spark_3.0.0 package:
 
 This has only been tested with 2G ram and up.
 
-$ ops load spark_3.0.0 -p 8080 -p 7077 -c config.json
+$ ops pkg load spark_3.0.0 -p 8080 -p 7077 -c config.json
 ```
 
 ### Launch the Spark Master
 This package can be launched by running:
 ```
-$ ops load spark_3.0.0 -p 8080 -p 7077
+$ ops pkg load spark_3.0.0 -p 8080 -p 7077
 ```
 
 This will start a Spark Master with Web UI at http://0.0.0.0:8080/ and workers can attach to the Spark Master via [spark://0.0.0.0:7077](park://0.0.0.0:7077).

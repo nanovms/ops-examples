@@ -9,5 +9,5 @@ pip install --user -U Flask
 ```
 
 ```sh
-$ ops load python_2.7.15rc1 -c config.json -p 8080
+$ ops pkg load python_2.7.15rc1 -c config.json -p 8080
 ```

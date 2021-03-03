@@ -12,5 +12,5 @@ mvn spring-boot:run
 ```
 
 ```
-$ ops load java_1.8.0_191 -p 8080 -c config.json
+$ ops pkg load java_1.8.0_191 -p 8080 -c config.json
 ```
