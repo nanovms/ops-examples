@@ -1,14 +1,27 @@
-.Net Hello World
+.NET Hello World
 ==================
 
-Generate a New .Net Application:
-
-```
-dotnet new console -o myApp
-dotnet build
-dotnet publish -c release --self-contained --runtime linux-x64
-```
+Create a new console app:
 
 ```sh
-$ ops run -c config.json publish/myApp
+dotnet new console -o myApp
+dotnet build
+```
+
+Publish as a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/runtime-patch-selection) app:
+
+```sh
+dotnet publish -c release --self-contained --runtime linux-x64 -o ./publish
+```
+
+or as a [single file](https://docs.microsoft.com/en-us/dotnet/core/deploying/single-file) (and self-contained) app:
+
+```sh
+dotnet publish -c release --self-contained --runtime linux-x64 -o ./publish -p:PublishSingleFile=true
+```
+
+Run with [this `config.json`](./config.json):
+
+```sh
+ops run -c config.json publish/myApp
 ```

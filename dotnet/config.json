@@ -1,5 +1,15 @@
 {
-  "Files": ["/lib/x86_64-linux-gnu/librt.so.1", "/usr/lib/x86_64-linux-gnu/libicuuc.so.66.1", "/usr/lib/x86_64-linux-gnu/libicui18n.so.66.1", "/usr/lib/x86_64-linux-gnu/libicudata.so.66"],
+  "Files": [
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libicuuc.so.66",
+    "/usr/lib/x86_64-linux-gnu/libicui18n.so.66",
+    "/usr/lib/x86_64-linux-gnu/libicudata.so.66",
+    "/usr/lib/x86_64-linux-gnu/libssl.so.1.1",
+    "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/usr/lib/x86_64-linux-gnu/libnuma.so.1",
+    "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0"
+  ],
   "MapDirs": {"publish/*": "/" },
   "Dirs": ["publish"],
   "Env": {
