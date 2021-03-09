@@ -1,1 +1,1 @@
-print "yo"
+print ("yo")
