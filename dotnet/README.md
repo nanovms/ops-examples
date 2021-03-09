@@ -5,7 +5,7 @@ Create a new console app:
 
 ```sh
 dotnet new console -o myApp
-dotnet build
+cd myApp
 ```
 
 Publish as a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/runtime-patch-selection) app:
