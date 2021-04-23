@@ -1,0 +1,12 @@
+[package]
+name = "b"
+version = "0.1.0"
+authors = ["eyberg"]
+edition = "2018"
+
+# See more keys and their definitions at
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = { version = "1.6", features = [ "attributes" ] }
+sqlx = {version = "0.5.2", features = ["postgres", "runtime-async-std-rustls"]}
