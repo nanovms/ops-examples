@@ -19,6 +19,14 @@ cp /lib/x86_64-linux-gnu/libnss_compat.so.2 lib/x86_64-linux-gnu/.
 cp /lib/x86_64-linux-gnu/libnss_files.so.2 lib/x86_64-linux-gnu/.
 ```
 
+Note: Your libraries might be differently versioned depending on the
+libc of choice. You can figure out which one your app is loading by
+running the following command grepping through:
+
+```sh
+ops run --trace ./target/release/b
+```
+
 You'll need to copy over an /etc/nsswitch.conf:
 
 ```sh
