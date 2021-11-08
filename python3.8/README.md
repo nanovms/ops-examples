@@ -22,6 +22,8 @@ ops pkg load python_3.8.6 -c config.json -p 8080
 
 ## How to add more C dependencies
 
+You'll need `libgcc_s.so.1` and `libz.so.1` in [usr/lib64/](./usr/lib64/) for this example to work.
+
 ### If you are running Linux x86_64
 
 Copy the dependencies over using [config.json](config.json).
