@@ -1,0 +1,18 @@
+{
+    "Env": {
+        "FLASK_APP": "hi.py"
+    },
+    "MapDirs": {
+        "./.venv/*": "/.local",
+        "./usr/lib64/*": "/usr/lib/x86_64-linux-gnu"
+    },
+    "Args": [
+        "/.local/bin/flask",
+        "run",
+        "--port=8080",
+        "--host=0.0.0.0"
+    ],
+    "Files": [
+        "hi.py"
+    ]
+}
