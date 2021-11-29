@@ -1,6 +1,0 @@
-{
-  "Env": { "FLASK_APP": "hi.py" },
-  "MapDirs": {"/home/eyberg/.local/*": "/.local" },
-  "Args": ["/.local/bin/flask", "run", "--port=8080", "--host=0.0.0.0"],
-  "Files": ["hi.py"]
-}
