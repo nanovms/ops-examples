@@ -1,0 +1,8 @@
+```
+{
+  "BaseVolumeSz": "250m",
+  "Dirs": ["test-chain-1"],
+  "Files": ["genesis.json"],
+  "Args": ["server", "--data-dir", "./test-chain-1", "--chain", "genesis.json", "--grpc", ":10000", "--libp2p", ":10001", "--jsonrpc", ":10002", "--seal"]
+}
+```
