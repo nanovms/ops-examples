@@ -1,0 +1,15 @@
+{
+  "Args": ["server.py"],
+  "Files": ["server.py"],
+  "CloudConfig" :{
+        "ProjectID" :"my-project",
+        "Zone": "us-west2-a",
+        "BucketName":"my-bucket"
+    },
+  "RunConfig": {
+    "Ports": [
+      "8083"
+    ]
+  }
+
+}
