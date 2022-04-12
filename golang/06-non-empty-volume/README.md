@@ -3,7 +3,7 @@ Go Read-Write Mounted Volume
 
 1. build our Go application
 ```sh
-$ GOOS=linux go build -o volume-example
+$ GOOS=linux GOARCH=amd64 go build -o volume-example
 ```
 
 2. create volume using `ops volume create <volume_name> -d <path_to_data_source>`
@@ -13,7 +13,7 @@ ops volume create not-empty -d files/
 
 3. get list of created volumes to find the UUID of relevant volume to attach
 ```sh
-ops volume list 
+ops volume list
 
 NAME		UUID		PATH
 not-empty	some-uuid	path-to-volume

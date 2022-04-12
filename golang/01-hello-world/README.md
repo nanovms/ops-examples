@@ -9,7 +9,7 @@ using linux, the compilation should be the same.
  1. Build our golang application.
 
 ```sh
-$ GOOS=linux go build hello.go
+$ GOOS=linux GOARCH=amd64 go build hello.go
 ```
 
  2. Run our application within `ops`

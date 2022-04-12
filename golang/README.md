@@ -6,5 +6,5 @@ the OS of `ops` rather than your machine's OS. So always make sure you are
 building for linux.
 
 ```sh
-$ GOOS=linux go build
+$ GOOS=linux GOARCH=amd64 go build
 ```

@@ -5,13 +5,13 @@ Golang HTTP Hello World
 
 on mac:
 ```sh
-$ GOOS=linux go build 
+$ GOOS=linux GOARCH=amd64 go build
 ```
 
 on linux:
 
 ```sh
-$ go build 
+$ go build
 ```
 
  2. Run our application within `ops`
