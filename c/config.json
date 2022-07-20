@@ -1,0 +1,4 @@
+{
+  "MapDirs": {"/etc/OpenCL/vendors/*": "/etc/OpenCL/vendors" },
+  "Dirs": ["usr"]
+}
