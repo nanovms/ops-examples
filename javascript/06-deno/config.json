@@ -1,0 +1,4 @@
+{
+  "Files": ["hi.js"],
+  "Args": ["run", "hi.js"]
+}
