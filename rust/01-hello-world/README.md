@@ -28,18 +28,12 @@ Add the target:
 rustup target add x86_64-unknown-linux-musl
 ```
 
-Put this into your .cargo/config:
-```
-[target.x86_64-unknown-linux-musl]
-linker = "x86_64-linux-musl-gcc"
-```
-
 Build:
 
 ```
 TARGET_CC=x86_64-linux-musl-gcc \
-RUSTFLAGS="-C linker=x86_64-linux-musl-gcc" \
-cargo build --target=x86_64-unknown-linux-musl
+rustc --target=x86_64-unknown-linux-musl \
+-C linker=x86_64-linux-musl-gcc main.rs
 ```
 
 ### Dynamic
