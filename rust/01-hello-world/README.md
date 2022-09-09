@@ -36,6 +36,17 @@ rustc --target=x86_64-unknown-linux-musl \
 -C linker=x86_64-linux-musl-gcc main.rs
 ```
 
+To run:
+
+```
+➜ ops run main
+ 100% |████████████████████████████████████████|  [0s:0s]
+booting /Users/eyberg/.ops/images/main.img ...
+assigned: 10.0.2.15
+yo!
+exit status 1
+```
+
 ### Dynamic
 
 The process here is a bit different as you'll need to copy over any
