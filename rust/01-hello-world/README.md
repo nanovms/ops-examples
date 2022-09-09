@@ -58,6 +58,11 @@ brew tap SergioBenitez/osxct
 brew install x86_64-unknown-linux-gnu
 ```
 
+Add the target:
+```
+rustup target add x86_64-unknown-linux-gnu
+```
+
 Compile:
 ```
 TARGET_CC=x86_64-unknown-linux-gnu-gcc \
@@ -68,15 +73,14 @@ rustc --target=x86_64-unknown-linux-gnu \
 Sample Config:
 ```
 {
-  "Dirs": ["lib64"],
-  "ManifestName": "bob.manifest"
+  "Dirs": ["lib64"]
 }
 ```
 
 Next you need to point at or copy the libraries over:
 
 ```
-➜  tr  tree
+➜  tree
 .
 ├── config.json
 ├── lib64
@@ -93,12 +97,12 @@ Next you need to point at or copy the libraries over:
 From the toolchain I installed it was installed here:
 
 ```
-cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2 .
-cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libc.so.6 .
-cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libdl.so.2 .
-cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libgcc_s.so.1 .
-cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libpthread.so.0 .
-cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/librt.so.1 .
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2 lib64/
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libc.so.6 lib64/
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libdl.so.2 lib64/
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libgcc_s.so.1 lib64/
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/libpthread.so.0 lib64/
+cp /usr/local/Cellar/x86_64-unknown-linux-gnu/7.2.0/toolchain/x86_64-unknown-linux-gnu/sysroot/lib64/librt.so.1 lib64/
 ```
 
 If you need to figure out what libraries are there you can use:
@@ -127,9 +131,9 @@ To run:
 
 ```
 ➜ LD_LIBRARY_PATH=lib64 ops run -c config.json main
-right before expanding
+ 100% |████████████████████████████████████████|  [0s:0s]
 booting /Users/eyberg/.ops/images/main.img ...
 assigned: 10.0.2.15
-Hello, world!
+yo!
 exit status 1
 ```
