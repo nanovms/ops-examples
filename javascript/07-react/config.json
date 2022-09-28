@@ -1,0 +1,6 @@
+{
+  "Args": ["/usr/local/lib/node_modules/serve/build/main.js", "-s", "build"],
+  "Dirs": ["node_modules","public", "build", "src"],
+  "MapDirs": {"/usr/local/lib/node_modules/serve/*": "/usr/local/lib/node_modules/serve" },
+  "Files": ["package-lock.json", "package.json"]
+}
