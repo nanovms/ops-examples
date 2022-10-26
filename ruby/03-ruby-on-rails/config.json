@@ -1,0 +1,15 @@
+{
+	"BaseVolumeSz": "300m",
+	"Dirs": ["app", "bin", "config", "db", "lib", "log", "proc", "public", "storage", "test", "tmp", "vendor", "usr"],
+	"Files": ["config.json", "config.ru", "Gemfile", "Gemfile.lock", "Rakefile", "README.md"],
+	"Args": ["bin/rails", "server"],
+	"MapDirs": {
+		"/home/eyberg/.gem/ruby/3.0.0/*": "/.gem/ruby/3.0.0",
+		"/usr/lib/ruby/*": "/usr/lib/ruby",
+		"/usr/share/zoneinfo/*": "/usr/share/zoneinfo"
+	},
+  "Env": {
+		"GEM_HOME": "/.gem/ruby/3.0.0",
+    "GEM_PATH": "/usr/lib/ruby/gems/3.0.0:/.gem/ruby/3.0.0"
+   }
+}
