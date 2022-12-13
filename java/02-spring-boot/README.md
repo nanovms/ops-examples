@@ -9,8 +9,9 @@ Verify you can build the jar and run it:
 ```
 mvn dependency:tree
 mvn spring-boot:run
+mvn package
 ```
 
 ```
-$ ops pkg load java_1.8.0_191 -p 8080 -c config.json
+$ ops pkg load eyberg/java:16.0.1 -p 8080 -c config.json
 ```
