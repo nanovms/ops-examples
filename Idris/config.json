@@ -1,0 +1,8 @@
+{
+  "MapDirs": {"/usr/lib/csv9.5.4/*": "/usr/lib/csv9.5.4" },
+  "Args": ["chezscheme", "--program", "build/exec/hello_app/hello.so"],
+  "Env": {
+    "LD_LIBRARY_PATH": "build/exec/hello_app"
+    },
+  "Dirs": ["build"]
+}
