@@ -1,0 +1,24 @@
+let {print} = import "std.io"
+
+let foo = fn()
+    print("foo started")
+    let bar_frame = async bar()
+    print("in foo")
+    let bar_res = await bar_frame
+    print("foo finished")
+    return bar_res
+
+let bar = fn()
+    print("bar started")
+    suspend
+    print("bar resumed")
+    suspend
+    print("bar finished")
+    return 1
+
+
+print("main started")
+let foo_frame = async foo()
+print("in main")
+let res = await foo_frame
+print("main finished:", res)
