@@ -1,0 +1,4 @@
+def main() -> int:
+  a: str = "hello world"
+  println(a)
+  return 0
