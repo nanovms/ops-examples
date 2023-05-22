@@ -1,0 +1,5 @@
+{
+  "BaseVolumeSz": "500m",
+  "Args": ["-jar", "target/quarkus-app/quarkus-run.jar"],
+  "Dirs": ["src", "target"]
+}
