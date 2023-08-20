@@ -1,0 +1,4 @@
+{
+  "Dirs": ["target"],
+  "Args": ["-jar", "target/helidon-quickstart-se.jar"]
+}
