@@ -1,0 +1,22 @@
+{
+  "Dirs": ["dev", "nvidia", "proc", "usr"],
+  "Mounts": {
+    "tensorflow": "/usr"
+  },
+  "Files": ["hi.py", "keras_sequential.py", "lib/x86_64-linux-gnu/libnvidia-ptxjitcompiler.so.1",
+    "/lib/x86_64-linux-gnu/libcrypto.so.1.1", "/lib/x86_64-linux-gnu/libgcc_s.so.1", "/lib/x86_64-linux-gnu/libresolv.so.2", "/lib/x86_64-linux-gnu/librt.so.1",
+    "/lib/x86_64-linux-gnu/libssl.so.1.1", "/lib/x86_64-linux-gnu/libz.so.1"
+  ],
+  "CloudConfig" :{
+    "ProjectID" :"my-project",
+    "Zone": "us-west1-b",
+    "BucketName":"my-test-bucket",
+    "Flavor":"n1-standard-1"
+  },
+  "Args": ["keras_sequential.py"],
+  "RunConfig": {
+    "Klibs": ["gpu_nvidia"],
+    "GPUs": 1,
+    "GPUType": "nvidia-tesla-t4"
+  }
+}
