@@ -1,0 +1,12 @@
+{
+  "authors": [
+    "eyberg"
+  ],
+  "copyright": "Copyright © 2023, eyberg",
+  "description": "A minimal D application.",
+  "license": "proprietary",
+  "name": "dz",
+  "dependencies": {
+    "vibe-d": "~>0.9.0"
+  }
+}
