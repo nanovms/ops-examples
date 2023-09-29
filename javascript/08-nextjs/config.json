@@ -1,0 +1,4 @@
+{
+  "Dirs": [".next", "node_modules", "pages", "public", "styles"],
+  "Args": ["/node_modules/next/dist/bin/next", "start"]
+}
