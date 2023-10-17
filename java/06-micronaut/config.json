@@ -1,0 +1,4 @@
+{
+  "Dirs": ["build"],
+  "Args": ["-jar", "build/libs/hello-world-0.1-all.jar"]
+}
