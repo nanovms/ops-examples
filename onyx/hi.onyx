@@ -1,0 +1,5 @@
+use core {*}
+
+main :: () {
+  println("Hello, Onyx!");
+}

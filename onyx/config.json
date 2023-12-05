@@ -1,0 +1,8 @@
+{
+  "Args": ["run", "out.wasm"],
+  "MapDirs": {"/home/eyberg/.onyx/*": "/home/eyberg/.onyx" },
+  "Env": {
+    "ONYX_PATH": "/home/eyberg/.onyx"
+  },
+  "Files": ["out.wasm"]
+}
