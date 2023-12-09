@@ -1,0 +1,6 @@
+{
+  "MapDirs": {
+    "./.venv/*": "/.local"
+  },
+  "Dirs": ["usr"]
+}
