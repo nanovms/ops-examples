@@ -1,6 +1,10 @@
 This is a simple pytorch unikernel example.
 
 ```
+python3 -m venv .venv --prompt nanovm
+source .venv/bin/activate
+pip install torch
+pip install numpy
 ops pkg load eyberg/python:3.10.6 -c config.json -a hi.py
 ```
 
