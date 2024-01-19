@@ -1,0 +1,5 @@
+{
+  "Dirs": ["node_modules", "public", "usr", "etc", "dist"],
+  "Files": ["main.js", "index.html", "style.css", "javascript.svg"],
+  "Args": ["node_modules/vite/dist/node/cli.js", "--host", "0.0.0.0"]
+}
