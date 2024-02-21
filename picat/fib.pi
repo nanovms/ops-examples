@@ -1,0 +1,20 @@
+main =>
+  S = 0,
+  I = 1,
+  F = fib(I),
+  while (F <= 4000000)
+    if (F mod 2 == 0) then
+      S := S+F
+    end,
+    I := I+1,
+    F := fib(I)
+  end,
+printf("Sum of the even-valued terms is %w%n",S).
+
+main([A1]) =>
+  printf("fib(%s)=%w%n",A1,A1.to_integer().fib()).
+
+table
+fib(1) = 1.
+fib(2) = 2.
+fib(N) = fib(N-1)+fib(N-2).
