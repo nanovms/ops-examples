@@ -1,0 +1,6 @@
+{
+  "BaseVolumeSz": "300m",
+  "Args": ["node_modules/astro/astro.js", "preview", "--host", "0.0.0.0"],
+  "Dirs": ["node_modules", "public", "dist", "usr", "etc", "src"],
+  "Files": ["package.json", "astro.config.mjs"]
+}
