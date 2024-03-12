@@ -1,0 +1,11 @@
+grammar Parser {
+    rule  TOP  { I <love> <lang> }
+    token love { '♥' | love }
+    token lang { < Raku Perl Rust Go Python Ruby > }
+}
+
+say Parser.parse: 'I ♥ Raku';
+# OUTPUT: ｢I ♥ Raku｣ love => ｢♥｣ lang => ｢Raku｣
+
+say Parser.parse: 'I love Perl';
+# OUTPUT: ｢I love Perl｣ love => ｢love｣ lang => ｢Perl｣
