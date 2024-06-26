@@ -4,6 +4,7 @@ Rust Hello World
 If on Linux:
 
 ```sh
+$ rustc main.rs -o main
 $ ops run main
 ```
 
