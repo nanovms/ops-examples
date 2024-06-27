@@ -7,7 +7,7 @@ Create the example skeleton and copy in the Rust source:
 
 ```sh
 $ cargo new b
-$ cargo build
+$ cargo build --release
 ```
 
 Now we create the filesystem layout with the required libraries:
