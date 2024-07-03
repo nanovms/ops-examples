@@ -1,6 +1,6 @@
 {
 	"BaseVolumeSz": "150m",
-	"Dirs": ["app", "bootstrap", "config", "database", "lang", "public", "resources", "routes", "storage", "tests", "vendor"],
+	"Dirs": ["app", "bootstrap", "config", "database", "public", "resources", "routes", "storage", "tests", "vendor"],
 	"Files": [".env", "artisan", "composer.json", "composer.lock", "package.json", "phpunit.xml", "vite.config.js"],
 	"Args": ["-S", "0.0.0.0:8000", "public/index.php"]
 }
