@@ -1,0 +1,4 @@
+{
+  "Files": ["hi.json"],
+  "Args": ["-x", "hi.json"]
+}
