@@ -1,0 +1,4 @@
+{
+    "Files": ["index.tsx"],
+    "Args": ["index.tsx"]
+}
