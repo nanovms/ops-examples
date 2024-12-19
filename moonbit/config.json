@@ -1,0 +1,5 @@
+{
+  "Dirs": ["src", "target", ".mooncakes"],
+  "Args": ["target/wasm-gc/release/build/main/main.wasm"],
+  "Files": ["moon.mod.json"]
+}
