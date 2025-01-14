@@ -1,0 +1,4 @@
+{
+  "Dirs": ["artifact"],
+  "Args": ["-jar", "artifact/fl.jar"]
+}
