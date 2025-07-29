@@ -1,0 +1,4 @@
+{
+  "Files": ["hi.wren"],
+  "Args": ["hi.wren"]
+}
