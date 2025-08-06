@@ -1,0 +1,4 @@
+{
+  "Args": ["start", "target/mod.munlib", "fibonacci_n"],
+  "Dirs": ["target"]
+}
