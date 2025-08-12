@@ -1,0 +1,7 @@
+@required 'stdlib';
+
+main := () -> {
+    stdlib.io.println("Hello, Onion World!");
+};
+
+main();

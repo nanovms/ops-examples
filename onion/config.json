@@ -1,0 +1,4 @@
+{
+    "Files": ["hi.onion"],
+    "Args": ["hi.onion"]
+}
