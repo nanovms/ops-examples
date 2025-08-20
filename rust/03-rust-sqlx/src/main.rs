@@ -5,7 +5,6 @@ use std::time::Duration;
 async fn main() -> Result<(), sqlx::Error> {
     let pool = PgPoolOptions::new()
         .max_connections(5)
-        .connect_timeout(Duration::from_secs(3))
         .connect("postgres://login:pass@my-host-name/postgres")
         .await?;
 

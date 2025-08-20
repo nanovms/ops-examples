@@ -9,4 +9,4 @@ edition = "2018"
 
 [dependencies]
 async-std = { version = "1.6", features = [ "attributes" ] }
-sqlx = {version = "0.5.2", features = ["postgres", "runtime-async-std-rustls"]}
+sqlx = {version = "0.8.6", features = ["postgres", "runtime-async-std-rustls"]}
