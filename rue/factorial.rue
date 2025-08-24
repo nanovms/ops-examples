@@ -1,0 +1,13 @@
+fn factorial(n: i32) -> i32 {
+    if n <= 1 {
+        1
+    } else {
+        n * factorial(n - 1)
+    }
+}
+
+fn main() -> i32 {
+    let result: i32 = factorial(5);
+    println_i32(result);
+    return 0;
+}
