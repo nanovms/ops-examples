@@ -1,0 +1,3 @@
+println("3. String Operations:")
+let greeting = "Hello " + "World"
+println("   Concatenation:", greeting)
