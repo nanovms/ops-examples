@@ -1,0 +1,4 @@
+{
+  "Dirs": ["bin", "conf", "lib", "logs", "temp", "webapps", "work"],
+  "Args": ["-Djava.util.logging.config.file=/conf/logging.properties", "-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager", "-Djdk.tls.ephemeralDHKeySize=2048", "-Djava.protocol.handler.pkgs=org.apache.catalina.webresources", "-Dsun.io.useCanonCaches=false", "-Dorg.apache.catalina.security.SecurityListener.UMASK=0027", "--add-opens=java.base/java.lang=ALL-UNNAMED", "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED", "--add-opens=java.base/java.io=ALL-UNNAMED", "--add-opens=java.base/java.util=ALL-UNNAMED", "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED", "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED", "-classpath", "/bin/bootstrap.jar:/bin/tomcat-juli.jar", "-Dcatalina.base=/", "-Dcatalina.home=/", "-Djava.io.tmpdir=/temp", "org.apache.catalina.startup.Bootstrap", "start"]
+}
