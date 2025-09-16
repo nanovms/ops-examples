@@ -8,11 +8,8 @@ include libresolv (you might not have to do this on newer versions):
 cc main.cpp -o main
 ```
 
-config.json:
-```sh
-{
-        "Files": ["/usr/lib/x86_64-linux-gnu/libresolv.so.2"]
-}
+```
+cp /usr/lib/x86_64-linux-gnu/libresolv.so.2 usr/lib/x86_64-linux-gnu/.
 ```
 
 If you're unsure you can do a
