@@ -1,0 +1,4 @@
+{
+  "Files": ["hi.luau"],
+  "Args": ["hi.luau"]
+}
