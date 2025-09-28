@@ -1,0 +1,20 @@
+import "std/math"
+import "std/log"
+
+fn is_prime(i32 n) -> bool:
+    if n < 2:
+        return false
+    for i = 2 to math::sqrt(n):
+        if n % i == 0:
+            return false
+    return true
+
+i32 limit = 50000
+i32 primes_found = 0
+
+parallel for i = 1 to limit:
+    if is_prime(i):
+        print "Prime: %d" | i
+        primes_found = primes_found + 1
+
+log::info(fmt!("Found %d primes up to %d", primes_found, limit))
