@@ -1,0 +1,5 @@
+{
+  "Dirs": ["dist", "node_modules", "src"],
+  "Files": ["package.json", "package-lock.json", "nest-cli.json"],
+  "Args": ["--enable-source-maps", "dist/main"]
+}
