@@ -1,0 +1,16 @@
+include <stdio.h>
+include <stdlib.h>
+include <time.h>
+
+fn run_op(a: int, b: int, op: fn(int, int) -> int) -> int {
+    return op(a, b);
+}
+
+fn main() {
+    defer { println "goodby"; }
+
+    var sum = run_op(10, 20, (a, b) -> a + b);
+
+    println "10 + 20 = {sum}";
+    println "";
+}
