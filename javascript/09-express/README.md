@@ -3,6 +3,8 @@ Express Hello World
 
 ```
 npm i express
+npx express-generator
+npm install
 ```
 
 ```sh
