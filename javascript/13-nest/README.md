@@ -1,7 +1,9 @@
 Nest JS unikernel hello world
 
 ```
+npm install @nestjs/cli
 nest new project-name
+cd project-name
 npm run start
 ```
 
