@@ -13,5 +13,5 @@ mvn package
 ```
 
 ```
-$ ops pkg load eyberg/java:16.0.1 -p 8080 -c config.json
+$ ops pkg load eyberg/java:21.0.4 -p 8080 -c config.json
 ```

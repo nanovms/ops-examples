@@ -2,5 +2,5 @@
   "BaseVolumeSz": "550m",
   "Files": ["tsconfig.json", "postcss.config.mjs"],
   "Dirs":["app", "public", "node_modules", "proc", ".next"],
-  "Args": ["server.js"]
+  "Args": ["index.js"]
 }
