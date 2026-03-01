@@ -1,0 +1,19 @@
+import (Coroutine) coroutine
+
+define one_to_five(co: Coroutine[Integer, Unit]): Integer
+{
+    for i in 1...3: {
+        co.yield(i)
+    }
+
+    co.yield(4)
+    return 5
+}
+
+var co = Coroutine.build(one_to_five)
+
+print(co.resume()) # Success(1)
+print(co.resume()) # Success(2)
+print(co.resume()) # Success(3)
+print(co.resume()) # Success(4)
+print(co.resume()) # Success(5)
