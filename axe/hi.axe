@@ -1,0 +1,9 @@
+use std.string;
+
+def greet(name: string): void {
+    println $"Hello, {name}";
+}
+
+def main() {
+    greet(str("Axe"));
+}
