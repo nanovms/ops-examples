@@ -1,0 +1,8 @@
+ import "/main_wrapper.iu"
+ import "/stdout.iu"
+
+ pretty_main
+ {
+     ust::stdout_print( "Hello, world!\n" );
+     return 0;
+ }
